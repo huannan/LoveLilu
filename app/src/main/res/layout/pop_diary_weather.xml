@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="5dp"
+    android:orientation="vertical"
+    android:paddingRight="83dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pop_menu_0" />
+
+    <com.andexert.library.RippleView
+        android:id="@+id/rv_w_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ripple:rv_color="@color/ripple_color"
+        ripple:rv_rippleDuration="@integer/ripple_duration"
+        ripple:rv_type="rectangle"
+        ripple:rv_zoom="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pop_menu_1">
+
+            <ImageView
+                android:id="@+id/iv_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/weather_1"
+                android:textColor="@color/base_color"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+    </com.andexert.library.RippleView>
+
+    <com.andexert.library.RippleView
+        android:id="@+id/rv_w_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        ripple:rv_color="@color/ripple_color"
+        ripple:rv_rippleDuration="@integer/ripple_duration"
+        ripple:rv_type="rectangle"
+        ripple:rv_zoom="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pop_menu_2">
+
+            <ImageView
+                android:id="@+id/iv_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:text="@string/weather_2"
+                android:textColor="@color/base_color"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+    </com.andexert.library.RippleView>
+
+    <com.andexert.library.RippleView
+        android:id="@+id/rv_w_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        ripple:rv_color="@color/ripple_color"
+        ripple:rv_rippleDuration="@integer/ripple_duration"
+        ripple:rv_type="rectangle"
+        ripple:rv_zoom="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pop_menu_2">
+
+            <ImageView
+                android:id="@+id/iv_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:text="@string/weather_3"
+                android:textColor="@color/base_color"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+    </com.andexert.library.RippleView>
+
+    <com.andexert.library.RippleView
+        android:id="@+id/rv_w_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        ripple:rv_color="@color/ripple_color"
+        ripple:rv_rippleDuration="@integer/ripple_duration"
+        ripple:rv_type="rectangle"
+        ripple:rv_zoom="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pop_menu_2">
+
+            <ImageView
+                android:id="@+id/iv_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:text="@string/weather_4"
+                android:textColor="@color/base_color"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+    </com.andexert.library.RippleView>
+
+</LinearLayout>

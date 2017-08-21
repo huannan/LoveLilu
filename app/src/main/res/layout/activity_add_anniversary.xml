@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+
+    <com.lovelilu.widget.AppToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftButtonIcon="@drawable/common_toobar_icon_back"
+        app:myTitle="@string/write_day"
+        app:rightButtonIcon="@drawable/icon_public"
+        app:showSearchView="false" />
+
+    <View
+        android:id="@+id/view_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/shadow_size"
+        android:layout_below="@id/toolbar"
+        android:background="@drawable/shape_toolbar_shadow"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/rl_day"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_topadornment" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp">
+
+            <com.rockerhieu.emojicon.EmojiconEditText
+                android:id="@+id/et_day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@null"
+                android:gravity="top"
+                android:hint="@string/input_day_hit_content"
+                android:lines="2"
+                android:maxLength="80"
+                android:textColor="@color/item_file_title"
+                android:textColorHint="#dcdcdc"
+                android:textCursorDrawable="@drawable/shape_et_cursor"
+                android:textSize="@dimen/item_title_txt_size"
+                emojicon:emojiconAlignment="baseline"
+                emojicon:emojiconSize="@dimen/emoji_size" />
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_day"
+                android:drawableLeft="@drawable/ic_time"
+                android:drawablePadding="5dp"
+                android:text="2016年7月5日"
+                android:textColor="@color/item_file_title"
+                android:textSize="@dimen/item_title_txt_size" />
+
+            <com.cuboid.cuboidcirclebutton.CuboidButton
+                android:id="@+id/btn_time"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerInParent="true"
+                android:text="@string/select_date"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                app:cub_border_color="@color/pink_low"
+                app:cub_border_radius="4dp"
+                app:cub_color="@color/pink"
+                app:cub_hover_color="@color/pink_low"
+                app:cub_riple_effect="true" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

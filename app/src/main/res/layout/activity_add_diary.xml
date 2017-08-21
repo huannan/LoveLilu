@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <View
+        android:id="@+id/status_bar_top"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/status_bar"
+        android:visibility="gone" />
+
+    <com.lovelilu.widget.AppToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftButtonIcon="@drawable/common_toobar_icon_back"
+        app:myTitle="@string/write_diary"
+        app:rightButtonIcon="@drawable/icon_public"
+        app:showSearchView="false" />
+
+    <View
+        android:id="@+id/view_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/shadow_size"
+        android:layout_below="@id/toolbar"
+        android:background="@drawable/shape_toolbar_shadow"
+        android:visibility="visible" />
+
+    <ScrollView
+        android:id="@+id/sv_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/view_shadow"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:fillViewport="true">
+
+
+        <RelativeLayout
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_love"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <include layout="@layout/bg_layout_love" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_default"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <include layout="@layout/bg_layout_mon" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_candy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible">
+
+                <include layout="@layout/bg_layout_candy" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_arty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <include layout="@layout/bg_layout_arty" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_antique"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <include layout="@layout/bg_layout_antique" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_theme"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="0dp"
+                        android:drawableLeft="@drawable/beauty_face_on"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/tab_padding_t_b"
+                        android:paddingLeft="@dimen/tab_padding_l_r"
+                        android:paddingRight="@dimen/tab_padding_l_r"
+                        android:paddingTop="@dimen/tab_padding_t_b"
+                        android:text="@string/theme"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_weather"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@id/tv_theme"
+                        android:drawableLeft="@drawable/ic_biaoqian_w"
+                        android:drawablePadding="5dp"
+                        android:paddingBottom="@dimen/tab_padding_t_b"
+                        android:paddingLeft="@dimen/tab_padding_l_r"
+                        android:paddingRight="@dimen/tab_padding_l_r"
+                        android:paddingTop="@dimen/tab_padding_t_b"
+                        android:text="晴天"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="0dp"
+                        android:layout_toLeftOf="@id/tv_weather"
+                        android:drawableLeft="@drawable/ic_time_w"
+                        android:drawablePadding="5dp"
+                        android:paddingBottom="@dimen/tab_padding_t_b"
+                        android:paddingLeft="@dimen/tab_padding_l_r"
+                        android:paddingRight="@dimen/tab_padding_l_r"
+                        android:paddingTop="@dimen/tab_padding_t_b"
+                        android:text="2016年8月25日星期五"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+                <com.rockerhieu.emojicon.EmojiconEditText
+                    android:id="@+id/et_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/toolbar"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@null"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/input_diary_hit_title"
+                    android:textColor="@color/white"
+                    android:textColorHint="#dcdcdc"
+                    android:textCursorDrawable="@drawable/shape_et_cursor"
+                    android:textSize="@dimen/diary_title"
+                    emojicon:emojiconAlignment="baseline"
+                    emojicon:emojiconSize="@dimen/emoji_size" />
+
+                <com.rockerhieu.emojicon.EmojiconEditText
+                    android:id="@+id/et_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/et_title"
+                    android:layout_marginTop="10dp"
+                    android:background="@null"
+                    android:gravity="top"
+                    android:hint="@string/input_diary_hit_content"
+                    android:minHeight="150dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="#dcdcdc"
+                    android:textCursorDrawable="@drawable/shape_et_cursor"
+                    android:textSize="@dimen/diary_content_size"
+                    emojicon:emojiconAlignment="baseline"
+                    emojicon:emojiconSize="@dimen/emoji_size" />
+
+                <ImageView
+                    android:id="@+id/iv_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="170dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_accessoriescon_add" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+    <GridView
+        android:id="@+id/grv_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/view_shadow"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="50dp"
+        android:background="#00000000"
+        android:horizontalSpacing="5dp"
+        android:listSelector="#00000000"
+        android:numColumns="4"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="5dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

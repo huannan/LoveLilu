@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="85dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_bg"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:background="@color/transparent"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/app_title_shadow" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="2dp">
+
+            <ImageView
+                android:id="@+id/toolbar_leftButton"
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="@dimen/icon_size"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/common_toobar_icon_avatar_with_bg"
+                android:textColor="@color/white"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/toolbar_rightButton"
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="@dimen/icon_size"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/manage_download_icon"
+                android:textColor="@color/white"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:id="@+id/rl_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/toolbar_rightButton"
+                android:layout_toRightOf="@id/toolbar_leftButton"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:visibility="visible">
+
+                <EditText
+                    android:id="@+id/toolbar_searchview"
+                    style="@style/search_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/selector_search_view"
+                    android:gravity="center_vertical"
+                    android:hint="请输入搜索内容"
+                    android:paddingLeft="50dp"
+                    android:paddingRight="50dp"
+                    android:text=""
+                    android:textColorHint="@color/text_default"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/common_toobar_icon_search" />
+
+                <ImageView
+                    android:id="@+id/iv_scan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/common_icon_search_qrcode" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/toolbar_rightButton"
+                android:layout_toRightOf="@id/toolbar_leftButton"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/desc"
+                android:textSize="20sp"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+

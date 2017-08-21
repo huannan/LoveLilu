@@ -1,0 +1,59 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/base_color</item>
+        <item name="colorPrimaryDark">@color/base_color</item>
+        <item name="colorAccent">@color/base_color</item>
+        <item name="colorControlNormal">@color/base_color</item>
+        <item name="colorControlActivated">@color/base_color</item>
+    </style>
+
+    <style name="MyAppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/bg</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="FullscreenTheme" parent="MyAppBaseTheme">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="myProgressBarStyle">
+        <item name="android:indeterminateDrawable">@drawable/icon_progressbar_loading</item>
+    </style>
+
+    <style name="DialogTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/bg_dialog</item>
+    </style>
+
+
+    <style name="NoTitleDialog" parent="@android:style/Theme.Holo.Dialog">
+        <item name="android:windowFrame">@null</item><!--边框-->
+        <item name="android:windowNoTitle">true</item> <!--无标题-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowBackground">@color/transparent</item><!--背景透明-->
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+
+    <style name="search_view">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/pink</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="SwipeBackLayout">
+        <item name="edge_size">50dip</item>
+        <item name="shadow_left">@drawable/shadow_left</item>
+        <item name="shadow_right">@drawable/shadow_right</item>
+        <item name="shadow_bottom">@drawable/shadow_bottom</item>
+    </style>
+</resources>

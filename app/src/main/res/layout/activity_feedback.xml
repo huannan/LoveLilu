@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <com.lovelilu.widget.AppToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftButtonIcon="@drawable/common_toobar_icon_back"
+        app:myTitle="@string/feedback"
+        app:rightButtonIcon="@drawable/icon_public"
+        app:showSearchView="false" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/shadow_size"
+        android:background="@drawable/shape_toolbar_shadow"
+        android:visibility="visible" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/feedback_title"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/diary_content_size" />
+
+
+            <com.rockerhieu.emojicon.EmojiconEditText
+                android:id="@+id/et_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_edit"
+                android:hint="@string/input_feedback_hit_title"
+                android:padding="5dp"
+                android:textColor="@color/item_file_title"
+                android:textColorHint="#dcdcdc"
+                android:textCursorDrawable="@drawable/shape_et_cursor"
+                android:textSize="@dimen/diary_content_size"
+                emojicon:emojiconAlignment="baseline"
+                emojicon:emojiconSize="@dimen/emoji_size" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/feedback_content"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/diary_content_size" />
+
+            <com.rockerhieu.emojicon.EmojiconEditText
+                android:id="@+id/et_content"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_edit"
+                android:gravity="top"
+                android:hint="@string/input_feedback_hit_content"
+                android:padding="5dp"
+                android:textColor="@color/item_file_title"
+                android:textColorHint="#dcdcdc"
+                android:textCursorDrawable="@drawable/shape_et_cursor"
+                android:textSize="@dimen/diary_content_size"
+                emojicon:emojiconAlignment="baseline"
+                emojicon:emojiconSize="@dimen/emoji_size" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bg_pink"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btn_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:text="@string/submit"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/diary_title" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="LoveToolbar">
+        <attr name="title_txt" format="string" />
+        <attr name="left_btn_txt" format="string" />
+        <attr name="right_btn_txt" format="string" />
+        <attr name="right2_btn_txt" format="string" />
+        <attr name="left_btn_drawable" format="reference" />
+        <attr name="right_btn_drawable" format="reference" />
+        <attr name="right2_btn_drawable" format="reference" />
+    </declare-styleable>
+
+</resources>

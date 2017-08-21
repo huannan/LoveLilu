@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "D:\\AndroidStudio\\LoveLilu\\gifdrawable\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 318,
+                    "endColumn": 62,
+                    "endOffset": 376
+                },
+                "from": {
+                    "file": "D:\\AndroidStudio\\LoveLilu\\gifdrawable\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 56,
+                        "endColumn": 62,
+                        "endOffset": 114
+                    }
+                }
+            }
+        ]
+    }
+]

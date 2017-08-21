@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\AndroidStudio\\LoveLilu\\calendarSelector\\build\\intermediates\\res\\merged\\release\\drawable\\normal_calendar_order_item_bg.xml",
+        "source": "D:\\AndroidStudio\\LoveLilu\\calendarSelector\\src\\main\\res\\drawable\\normal_calendar_order_item_bg.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudio\\LoveLilu\\calendarSelector\\build\\intermediates\\res\\merged\\release\\drawable\\calendar_order_item_bg.xml",
+        "source": "D:\\AndroidStudio\\LoveLilu\\calendarSelector\\src\\main\\res\\drawable\\calendar_order_item_bg.xml"
+    }
+]

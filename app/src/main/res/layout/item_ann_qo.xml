@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_bg_quotation"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@drawable/bg_mailer"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:id="@+id/ll_quotation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?android:attr/selectableItemBackground">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:padding="15dp"
+                    android:visibility="visible">
+
+                    <com.rockerhieu.emojicon.EmojiconTextView
+                        android:id="@+id/tv_quotation_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:lines="1"
+                        android:text="@string/liluyulu_item"
+                        android:textColor="@color/item_file_title"
+                        android:textSize="@dimen/item_title_txt_size"
+                        emojicon:emojiconAlignment="baseline"
+                        emojicon:emojiconSize="@dimen/emoji_size" />
+
+
+                    <com.rockerhieu.emojicon.EmojiconTextView
+                        android:id="@+id/tv_quotation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_quotation_desc"
+                        android:layout_marginTop="5dp"
+                        android:gravity="start"
+                        android:lines="4"
+                        android:maxLength="80"
+                        android:text="标题标题标题题标题题题题题标题题题题标题标题题题题标题标题题题题标题标题题题题标题标题题题题标题标题标题题题题题标题标题题题题题标题标题题题题题标题标题题题题题标题标题题题题题题标题"
+                        android:textColor="@color/item_file_title"
+                        android:textSize="@dimen/item_content_txt_size"
+                        emojicon:emojiconAlignment="baseline"
+                        emojicon:emojiconSize="@dimen/emoji_size" />
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_bg_day"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@color/white"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:id="@+id/rl_day"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?android:attr/selectableItemBackground"
+                android:visibility="visible">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/bg_topadornment" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:padding="15dp">
+
+                        <TextView
+                            android:id="@+id/tv_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="20dp"
+                            android:text="30天"
+                            android:textColor="@color/pink"
+                            android:textSize="35sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_toLeftOf="@id/tv_num"
+                            android:text="@string/need"
+                            android:textColor="@color/pink"
+                            android:textSize="15sp" />
+
+                        <com.rockerhieu.emojicon.EmojiconTextView
+                            android:id="@+id/tv_day"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="20dp"
+                            android:drawableLeft="@drawable/ic_biaoqian"
+                            android:drawablePadding="5dp"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:text="周年纪念日"
+                            android:textColor="@color/item_file_title"
+                            android:textSize="@dimen/item_title_txt_size" />
+
+                        <com.rockerhieu.emojicon.EmojiconTextView
+                            android:id="@+id/tv_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_day"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="5dp"
+                            android:drawableLeft="@drawable/ic_time"
+                            android:drawablePadding="5dp"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:text="2016年7月5日"
+                            android:textColor="@color/item_file_title"
+                            android:textSize="@dimen/item_content_txt_size" />
+
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="15dp">
+
+
+            <LinearLayout
+                android:id="@+id/ll_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true">
+
+                <ImageView
+                    android:layout_width="@dimen/list_icon_size_W"
+                    android:layout_height="@dimen/list_icon_size_h"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/ic_plate_share" />
+
+                <TextView
+                    android:id="@+id/tv_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/mar_bottom"
+                    android:textColor="@color/pink"
+                    android:textSize="@dimen/item_tv_bottom" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_toLeftOf="@id/ll_share">
+
+                <ImageView
+                    android:layout_width="@dimen/list_icon_size_W"
+                    android:layout_height="@dimen/list_icon_size_h"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/ic_plate_comment" />
+
+                <TextView
+                    android:id="@+id/tv_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/mar_bottom"
+                    android:text="0"
+                    android:textColor="@color/pink"
+                    android:textSize="@dimen/item_tv_bottom" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="15dp"
+                android:layout_toLeftOf="@+id/ll_comment">
+
+                <ImageView
+                    android:id="@+id/iv_like"
+                    android:layout_width="@dimen/list_icon_size_W"
+                    android:layout_height="@dimen/list_icon_size_h"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/ic_plate_like" />
+
+                <TextView
+                    android:id="@+id/tv_like"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="@dimen/mar_bottom"
+                    android:text="0"
+                    android:textColor="@color/pink"
+                    android:textSize="@dimen/item_tv_bottom" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

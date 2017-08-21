@@ -1,0 +1,173 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <com.lovelilu.widget.AppToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftButtonIcon="@drawable/common_toobar_icon_back"
+        app:myTitle="@string/diary_detail"
+        app:rightButtonIcon="@drawable/common_toobar_icon_delete_with_bg"
+        app:showSearchView="false" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/shadow_size"
+        android:background="@drawable/shape_toolbar_shadow"
+        android:visibility="visible" />
+
+    <cn.bingoogolapple.refreshlayout.BGARefreshLayout
+        android:id="@+id/rl_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:fillViewport="true"
+            android:overScrollMode="never">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/bg"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_love"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="visible">
+
+                    <include layout="@layout/bg_layout_love" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_default"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone">
+
+                    <include layout="@layout/bg_layout_mon" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_candy"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone">
+
+                    <include layout="@layout/bg_layout_candy" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_arty"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone">
+
+                    <include layout="@layout/bg_layout_arty" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_antique"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone">
+
+                    <include layout="@layout/bg_layout_antique" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_weather"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:drawableLeft="@drawable/ic_biaoqian_w"
+                            android:drawablePadding="5dp"
+                            android:paddingBottom="@dimen/tab_padding_t_b"
+                            android:paddingLeft="@dimen/tab_padding_l_r"
+                            android:paddingRight="@dimen/tab_padding_l_r"
+                            android:paddingTop="@dimen/tab_padding_t_b"
+                            android:text="晴天"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:layout_toLeftOf="@id/tv_weather"
+                            android:drawableLeft="@drawable/ic_time_w"
+                            android:drawablePadding="5dp"
+                            android:paddingBottom="@dimen/tab_padding_t_b"
+                            android:paddingLeft="@dimen/tab_padding_l_r"
+                            android:paddingRight="@dimen/tab_padding_l_r"
+                            android:paddingTop="@dimen/tab_padding_t_b"
+                            android:text="2016-8-25"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                    </RelativeLayout>
+
+                    <com.rockerhieu.emojicon.EmojiconTextView
+                        android:id="@+id/tv_diary_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:gravity="start"
+                        android:text="我是标题哈哈哈哈"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/diary_title"
+                        emojicon:emojiconAlignment="baseline"
+                        emojicon:emojiconSize="@dimen/emoji_size" />
+
+                    <com.rockerhieu.emojicon.EmojiconTextView
+                        android:id="@+id/tv_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="        李璐李璐 璐李璐李璐李璐李璐李璐李璐璐李璐李璐李璐李璐李璐李璐李璐李璐璐李璐李璐李璐李璐李璐李璐李璐李璐璐李璐李璐李璐李璐李璐李璐李璐李璐璐李璐李璐李璐李璐李璐李璐李璐李璐璐李璐李璐李璐李璐李璐李璐李璐李璐璐李璐李璐李璐李璐李璐李璐李璐李璐璐李璐李璐李璐李璐李璐李璐李璐李璐璐李璐李璐李璐李璐李璐李璐李璐李璐璐李璐李璐李璐李璐李璐李璐李璐李璐璐李璐李璐李璐李璐李璐李璐李璐李璐璐李璐李璐李璐李璐李璐李璐李璐李璐璐李璐李璐李璐李璐李璐李璐李璐李璐璐"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/diary_content_size"
+                        emojicon:emojiconAlignment="baseline"
+                        emojicon:emojiconSize="@dimen/emoji_size" />
+
+                    <ImageView
+                        android:id="@+id/iv_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="170dp"
+                        android:layout_marginTop="20dp"
+                        android:scaleType="fitCenter" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+        </ScrollView>
+    </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,151 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/top_bar_bg"
+    android:orientation="vertical"
+    android:paddingTop="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:scaleType="centerInside"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="49dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/top_bar_title"
+            android:textSize="20sp" />
+
+        <com.andexert.library.RippleView
+            android:id="@+id/rv_iv_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:visibility="gone"
+            ripple:rv_color="@color/ripple_color"
+            ripple:rv_rippleDuration="@integer/ripple_duration_icon"
+            ripple:rv_type="doubleRipple"
+            ripple:rv_zoom="true">
+
+            <ImageView
+                android:id="@+id/iv_left"
+                android:layout_width="50dp"
+                android:layout_height="49dp"
+                android:scaleType="centerInside"
+                android:visibility="gone" />
+
+        </com.andexert.library.RippleView>
+
+        <com.andexert.library.RippleView
+            android:id="@+id/rv_tv_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:visibility="gone"
+            ripple:rv_color="@color/ripple_color"
+            ripple:rv_rippleDuration="@integer/ripple_duration_icon"
+            ripple:rv_type="doubleRipple"
+            ripple:rv_zoom="true">
+
+            <TextView
+                android:id="@+id/tv_left"
+                android:layout_width="49dp"
+                android:layout_height="49dp"
+                android:gravity="center"
+                android:scaleType="centerInside"
+                android:textColor="@color/top_bar_tv"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+        </com.andexert.library.RippleView>
+
+        <com.andexert.library.RippleView
+            android:id="@+id/rv_iv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            ripple:rv_color="@color/ripple_color"
+            ripple:rv_rippleDuration="@integer/ripple_duration_icon"
+            ripple:rv_type="doubleRipple"
+            ripple:rv_zoom="true">
+
+            <ImageView
+                android:id="@+id/iv_right"
+                android:layout_width="50dp"
+                android:layout_height="49dp"
+                android:scaleType="centerInside"
+                android:visibility="gone" />
+
+        </com.andexert.library.RippleView>
+
+        <com.andexert.library.RippleView
+            android:id="@+id/rv_iv_right_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            android:visibility="gone"
+            ripple:rv_color="@color/ripple_color"
+            ripple:rv_rippleDuration="@integer/ripple_duration_icon"
+            ripple:rv_type="doubleRipple"
+            ripple:rv_zoom="true">
+
+            <ImageView
+                android:id="@+id/iv_right_2"
+                android:layout_width="50dp"
+                android:layout_height="49dp"
+                android:scaleType="centerInside"
+                android:visibility="gone" />
+
+        </com.andexert.library.RippleView>
+
+        <com.andexert.library.RippleView
+            android:id="@+id/rv_tv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            ripple:rv_color="@color/ripple_color"
+            ripple:rv_rippleDuration="@integer/ripple_duration_icon"
+            ripple:rv_type="doubleRipple"
+            ripple:rv_zoom="true">
+
+            <TextView
+                android:id="@+id/tv_right"
+                android:layout_width="49dp"
+                android:layout_height="49dp"
+                android:gravity="center"
+                android:scaleType="centerInside"
+                android:textColor="@color/top_bar_tv"
+                android:textSize="16sp" />
+
+        </com.andexert.library.RippleView>
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/top_bar_line" />
+
+</LinearLayout>

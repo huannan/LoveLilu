@@ -1,0 +1,148 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/rl_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <cn.bingoogolapple.refreshlayout.BGARefreshLayout
+                android:id="@+id/rl_refresh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+                <!-- 内容控件 -->
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/bg" />
+
+            </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/common_loading_content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/rl_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:id="@+id/ll_loading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+
+                    <pl.droidsonroids.gif.GifImageView
+                        android:id="@+id/gif_weini"
+                        android:layout_width="@dimen/loading_size"
+                        android:layout_height="@dimen/loading_size"
+                        android:layout_gravity="center_horizontal"
+                        android:visibility="visible" />
+
+                    <FrameLayout
+                        android:id="@+id/common_loading_content_background_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center_horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/common_loading_content_image_cloud_back"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center_vertical"
+                            android:layout_marginBottom="36dp"
+                            android:src="@drawable/ic_common_loading_cloud_back" />
+
+                        <ImageView
+                            android:id="@+id/common_loading_content_image_bear"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_common_loading_bear" />
+
+                        <ImageView
+                            android:id="@+id/common_loading_content_image_balloon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center_vertical"
+                            android:layout_marginBottom="34dp"
+                            android:layout_marginRight="25dp"
+                            android:src="@drawable/ic_common_loading_balloon" />
+
+                        <ImageView
+                            android:id="@+id/common_loading_content_image_cloud_front"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center_vertical"
+                            android:layout_marginTop="30dp"
+                            android:src="@drawable/ic_common_loading_cloud_front" />
+
+                        <ImageView
+                            android:id="@+id/common_loading_content_image_background"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/bg_common_loading" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/common_loading_content_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/common_loading_content_background_layout"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="16dp"
+                        android:gravity="center"
+                        android:text="@string/common_loading_tip"
+                        android:textColor="@color/pink"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <com.lovelilu.widget.AppToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bgAlpha="1.0"
+        app:rightButtonIcon="@drawable/common_toobar_icon_sort_with_bg"
+        app:showSearchView="true" />
+
+</RelativeLayout>

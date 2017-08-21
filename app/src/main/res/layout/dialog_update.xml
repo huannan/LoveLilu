@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/bg_grey"
+    android:gravity="center"
+    android:orientation="vertical">
+    <!-- android:background="@drawable/bg_grey" -->
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="330dp"
+        android:background="@drawable/mail_upgrade_introduce">
+
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="55dp"
+            android:text="@string/have_update"
+            android:textColor="#414141"
+            android:textSize="20sp" />
+
+
+        <View
+            android:id="@+id/line_1"
+            android:layout_width="120dp"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/tv_1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:background="#868686" />
+
+
+        <View
+            android:id="@+id/line_2"
+            android:layout_width="120dp"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/line_1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="1dp"
+            android:background="#868686" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line_2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:lines="4"
+            android:text="焕然一璐有更新啦，啊哈，啊哈哈哈，啊哈哈哈，啊哈哈哈，啊哈哈哈，啊哈哈哈，啊哈哈哈，啊哈哈哈，啊哈哈哈，啊哈哈哈，啊哈哈哈哈哈哈哈哈哈哈哈哈"
+            android:textColor="#414141"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="60dp"
+            android:background="@drawable/default_upgrade_introduce"
+            android:text="@string/update_imm"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:padding="15dp"
+            android:text="@string/not_update"
+            android:textColor="#FF6D6D"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <string name="hello">个推开放平台</string>
+    <string name="app_name">个推演示</string>
+    <string name="up">绑定sdk</string>
+    <string name="down">解绑sdk</string>
+    <string name="no_clientid">(none)</string>
+    <string name="start">启动</string>
+    <string name="stop">停止</string>
+    <string name="clear">清除日志</string>
+    <string name="enablelog">开启debug日志</string>
+    <string name="bindcell">绑定手机号</string>
+    <string name="pmsg">透传测试</string>
+    <string name="psmsg">通知栏测试</string>
+    <string name="begin">开始(h)</string>
+    <string name="end">结束</string>
+    <string name="duration">持续时间(h)</string>
+    <string name="set_heartbeat">心跳间隔(s)</string>
+    <string name="send_msg">发送消息</string>
+    <string name="bind_alias">绑定别名</string>
+    <string name="unbind_alias">解除别名绑定</string>
+    <string name="add_tag">添加Tag</string>
+    <string name="version">版本号</string>
+    <string name="silentime">静默时间</string>
+    <string name="getclientid">获取cid</string>
+    <string name="exit">退出</string>
+    <string name="appid">appid&#160;=&#160;</string>
+    <string name="appkey">appkey&#160;=&#160;</string>
+    <string name="appsecret">appsecret&#160;=&#160;</string>
+    <string name="mastersecret">mastersecret&#160;=&#160;</string>
+</resources>

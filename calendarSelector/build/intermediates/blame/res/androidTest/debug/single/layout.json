@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "D:\\AndroidStudio\\LoveLilu\\calendarSelector\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\calendar.xml",
+        "source": "D:\\AndroidStudio\\LoveLilu\\calendarSelector\\build\\intermediates\\bundles\\debug\\res\\layout\\calendar.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudio\\LoveLilu\\calendarSelector\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\calendar_item.xml",
+        "source": "D:\\AndroidStudio\\LoveLilu\\calendarSelector\\build\\intermediates\\bundles\\debug\\res\\layout\\calendar_item.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudio\\LoveLilu\\calendarSelector\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\calendar_selector.xml",
+        "source": "D:\\AndroidStudio\\LoveLilu\\calendarSelector\\build\\intermediates\\bundles\\debug\\res\\layout\\calendar_selector.xml"
+    }
+]

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="pink">#FB8F7F</color>
+    <color name="pink_low">#F9BBB2</color>
+    <color name="grey">#B6B6B6</color>
+    <color name="base_color">#FB8F7F</color>
+    <color name="base_color_press">#FB8F7F</color>
+    <color name="bg">#EFEEE9</color>
+
+    <color name="top_bar_bg">#75ED95</color>
+    <color name="top_bar_line">#bfbfbf</color>
+    <color name="top_bar_title">#fff</color>
+    <color name="top_bar_tv">#fff</color>
+
+    <color name="ripple_color">#88ffffff</color>
+    <color name="black">#000</color>
+    <color name="item_file_txt_1">#727272</color>
+    <color name="item_file_title">#ff333333</color>
+    <color name="diary_content_color">#000</color>
+
+    <color name="indicator_selected">#FB8F7F</color>
+    <color name="indicator_unselected">#B6B6B6</color>
+    <color name="white">#fff</color>
+    <color name="bottom_line_1">#e1e2e3</color>
+    <color name="transparent">#0000</color><!-- 透明 -->
+
+    <color name="bg_candy">#F8DCE0</color>
+    <color name="bg_arty">#E7D396</color>
+    <color name="bg_antique">#D1E5E6</color>
+    <color name="theme_candy_txt">#CC667F</color>
+    <color name="theme_arty_txt">#5F8D6C</color>
+    <color name="theme_antique_txt">#9EA287</color>
+    <color name="theme_default_txt">#71A596</color>
+    <color name="blue">#89E4FD</color>
+
+    <color name="comui_tab_text_color">#ff333333</color>
+    <color name="text_default">#ff717171</color>
+    <color name="desc">#242424</color>
+
+    <color name="line">#E4E4E4</color>
+    <color name="press">#F2F2F2</color>
+
+    <color name="bg_dialog">#ffffff</color>
+
+
+</resources>

@@ -1,0 +1,18 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.bm.library.PhotoView
+        android:id="@+id/pv_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gif_weini"
+        android:layout_width="@dimen/loading_size"
+        android:layout_height="@dimen/loading_size"
+        android:layout_centerInParent="true"
+        android:visibility="visible" />
+
+
+</RelativeLayout>

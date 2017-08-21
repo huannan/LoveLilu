@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="ripple_duration">100</integer>
+    <integer name="ripple_duration_icon">130</integer>
+
+</resources>

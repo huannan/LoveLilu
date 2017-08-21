@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="LOCAL" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="C:\Program Files\Android\Android Studio\gradle\gradle-2.14.1" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/cuboidcirclebutton" />
+            <option value="$PROJECT_DIR$/datepicker" />
+            <option value="$PROJECT_DIR$/gepush" />
+            <option value="$PROJECT_DIR$/gifdrawable" />
+            <option value="$PROJECT_DIR$/ripple" />
+            <option value="$PROJECT_DIR$/scanQrcodeLib" />
+            <option value="$PROJECT_DIR$/sharesdk" />
+            <option value="$PROJECT_DIR$/snowrain" />
+            <option value="$PROJECT_DIR$/tabbar" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_antique">
+
+        <ImageView
+            android:id="@+id/iv_1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="120dp"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/bg_antique_1" />
+
+        <ImageView
+            android:id="@+id/iv_2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/iv_1"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/bg_antique_2" />
+
+        <ImageView
+            android:id="@+id/iv_3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/iv_2"
+            android:layout_marginRight="160dp"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/bg_antique_3" />
+
+        <ImageView
+            android:id="@+id/iv_4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/iv_3"
+            android:layout_marginRight="260dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/bg_antique_4" />
+    </RelativeLayout>
+</RelativeLayout>

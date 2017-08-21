@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_item_bg_normal">
+
+        <RelativeLayout
+            android:id="@+id/rl_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="15dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_avatar"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/common_toobar_icon_avatar_with_bg"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="1dp" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/iv_avatar"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="2dp"
+                    android:text="璐宝宝"
+                    android:textColor="@color/item_file_title"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_weather"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:drawableLeft="@drawable/ic_biaoqian"
+                    android:drawablePadding="5dp"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="2dp"
+                    android:text="晴天"
+                    android:textColor="@color/grey"
+                    android:textSize="12sp" />
+
+                <com.rockerhieu.emojicon.EmojiconTextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_weather"
+                    android:layout_marginTop="5dp"
+                    android:lines="1"
+                    android:text="标题标题标题标题标题标题标题标题标题标题标题标题标题标题"
+                    android:textColor="@color/item_file_title"
+                    android:textSize="@dimen/item_title_txt_size"
+                    emojicon:emojiconAlignment="baseline"
+                    emojicon:emojiconSize="@dimen/emoji_size" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/tv_weather"
+                    android:drawableLeft="@drawable/ic_time"
+                    android:drawablePadding="5dp"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="2dp"
+                    android:text="时间 2016.6.22"
+                    android:textColor="@color/grey"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:id="@+id/ll_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_title"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/iv_image"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_launcher"
+                        android:visibility="visible" />
+
+                    <com.rockerhieu.emojicon.EmojiconTextView
+                        android:id="@+id/tv_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="7dp"
+                        android:ellipsize="end"
+                        android:maxLines="3"
+                        android:text="李璐璐我你啊爱你啊李璐我爱你啊李璐我爱你璐我爱你啊李璐我爱你啊李璐我爱你啊李璐我爱你啊李璐我爱你啊啊"
+                        android:textColor="@color/item_file_title"
+                        android:textSize="@dimen/item_content_txt_size" />
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ll_content"
+                    android:layout_marginTop="5dp">
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_share"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true">
+
+                        <ImageView
+                            android:id="@+id/iv_share"
+                            android:layout_width="@dimen/list_icon_size_W"
+                            android:layout_height="@dimen/list_icon_size_h"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/ic_plate_share" />
+
+                        <TextView
+                            android:id="@+id/tv_share"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/mar_bottom"
+                            android:textColor="@color/pink"
+                            android:textSize="@dimen/item_tv_bottom" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_comment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:layout_toLeftOf="@id/ll_share">
+
+                        <ImageView
+                            android:layout_width="@dimen/list_icon_size_W"
+                            android:layout_height="@dimen/list_icon_size_h"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/ic_plate_comment" />
+
+                        <TextView
+                            android:id="@+id/tv_comment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/mar_bottom"
+                            android:text="0"
+                            android:textColor="@color/pink"
+                            android:textSize="@dimen/item_tv_bottom" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_like"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="15dp"
+                        android:layout_toLeftOf="@+id/ll_comment">
+
+                        <ImageView
+                            android:id="@+id/iv_like"
+                            android:layout_width="@dimen/list_icon_size_W"
+                            android:layout_height="@dimen/list_icon_size_h"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/ic_plate_like" />
+
+                        <TextView
+                            android:id="@+id/tv_like"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:layout_marginLeft="@dimen/mar_bottom"
+                            android:text="0"
+                            android:textColor="@color/pink"
+                            android:textSize="@dimen/item_tv_bottom" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

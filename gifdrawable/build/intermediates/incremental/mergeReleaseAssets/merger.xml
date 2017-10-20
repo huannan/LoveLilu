@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="D:\AndroidStudio\LoveLilu\gifdrawable\src\main\assets"/><source path="D:\AndroidStudio\LoveLilu\gifdrawable\build\generated\assets\shaders\release"/></dataSet><dataSet config="release"><source path="D:\AndroidStudio\LoveLilu\gifdrawable\src\release\assets"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="/home/wuhuannan/AndroidPrj/LoveLilu/gifdrawable/src/main/assets"/><source path="/home/wuhuannan/AndroidPrj/LoveLilu/gifdrawable/build/generated/assets/shaders/release"/></dataSet><dataSet config="release"><source path="/home/wuhuannan/AndroidPrj/LoveLilu/gifdrawable/src/release/assets"/></dataSet></merger>

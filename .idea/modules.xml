@@ -3,26 +3,15 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/LoveLilu.iml" filepath="$PROJECT_DIR$/LoveLilu.iml" />
-      <module fileurl="file://$PROJECT_DIR$/LoveLilu.iml" filepath="$PROJECT_DIR$/LoveLilu.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/cuboidcirclebutton/cuboidcirclebutton.iml" filepath="$PROJECT_DIR$/cuboidcirclebutton/cuboidcirclebutton.iml" />
-      <module fileurl="file://$PROJECT_DIR$/cuboidcirclebutton/cuboidcirclebutton.iml" filepath="$PROJECT_DIR$/cuboidcirclebutton/cuboidcirclebutton.iml" />
-      <module fileurl="file://$PROJECT_DIR$/datepicker/datepicker.iml" filepath="$PROJECT_DIR$/datepicker/datepicker.iml" />
       <module fileurl="file://$PROJECT_DIR$/datepicker/datepicker.iml" filepath="$PROJECT_DIR$/datepicker/datepicker.iml" />
       <module fileurl="file://$PROJECT_DIR$/gepush/gepush.iml" filepath="$PROJECT_DIR$/gepush/gepush.iml" />
-      <module fileurl="file://$PROJECT_DIR$/gepush/gepush.iml" filepath="$PROJECT_DIR$/gepush/gepush.iml" />
-      <module fileurl="file://$PROJECT_DIR$/gifdrawable/gifdrawable.iml" filepath="$PROJECT_DIR$/gifdrawable/gifdrawable.iml" />
       <module fileurl="file://$PROJECT_DIR$/gifdrawable/gifdrawable.iml" filepath="$PROJECT_DIR$/gifdrawable/gifdrawable.iml" />
       <module fileurl="file://$PROJECT_DIR$/ripple/ripple.iml" filepath="$PROJECT_DIR$/ripple/ripple.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ripple/ripple.iml" filepath="$PROJECT_DIR$/ripple/ripple.iml" />
-      <module fileurl="file://$PROJECT_DIR$/scanQrcodeLib/scanQrcodeLib.iml" filepath="$PROJECT_DIR$/scanQrcodeLib/scanQrcodeLib.iml" />
       <module fileurl="file://$PROJECT_DIR$/scanQrcodeLib/scanQrcodeLib.iml" filepath="$PROJECT_DIR$/scanQrcodeLib/scanQrcodeLib.iml" />
       <module fileurl="file://$PROJECT_DIR$/sharesdk/sharesdk.iml" filepath="$PROJECT_DIR$/sharesdk/sharesdk.iml" />
-      <module fileurl="file://$PROJECT_DIR$/sharesdk/sharesdk.iml" filepath="$PROJECT_DIR$/sharesdk/sharesdk.iml" />
       <module fileurl="file://$PROJECT_DIR$/snowrain/snowrain.iml" filepath="$PROJECT_DIR$/snowrain/snowrain.iml" />
-      <module fileurl="file://$PROJECT_DIR$/snowrain/snowrain.iml" filepath="$PROJECT_DIR$/snowrain/snowrain.iml" />
-      <module fileurl="file://$PROJECT_DIR$/tabbar/tabbar.iml" filepath="$PROJECT_DIR$/tabbar/tabbar.iml" />
       <module fileurl="file://$PROJECT_DIR$/tabbar/tabbar.iml" filepath="$PROJECT_DIR$/tabbar/tabbar.iml" />
     </modules>
   </component>
